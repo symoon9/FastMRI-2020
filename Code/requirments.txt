@@ -1,0 +1,24 @@
+transformers
+tqdm
+torch
+torchvision
+cv2
+numpy
+pandas
+h5py
+
+
+jupyter notebook --no-browser --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token= --notebook-dir='/FastMRI'
+
+docker run \
+--rm \
+-it \
+--gpus all \
+--name=symoon2 \
+-u $(id -u):$(id -g) \
+-p 30015:8888 \
+-p 32015:8889 \
+-v /scratch/connectome/nemod/FastMRI:/FastMRI \
+--ipc=host \
+nemodleo/pytorch:FastMRI-jupyter \
+/bin/bash

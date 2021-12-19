@@ -1,0 +1,15 @@
+# configuration for uformer
+
+mode: 'denoising'
+patch_size: null # null for no patching
+
+model:
+  norm_layer: 'LayerNorm'
+  embed_dim: 16
+  win_size: 8
+  token_embed: 'linear'
+  token_mlp: 'leff'
+  depths: [2, 2, 2, 2, 2, 2, 2, 2, 2]
+  num_heads: [1, 2, 4, 8, 16, 16, 8, 4, 2]
+  mlp_ratio: 4.0
+  se_layer: True

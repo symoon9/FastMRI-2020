@@ -1,0 +1,5 @@
+# configuration for edcnn
+
+model:
+  in_ch: 1
+  out_ch: 32

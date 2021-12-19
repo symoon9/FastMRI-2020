@@ -1,0 +1,15 @@
+model:
+  k_space:
+    in_ch: 10
+    out_ch: 16
+    output: 2
+    sobel_ch: 16
+    # in_ch: 8
+    # out_ch: 16
+    # output: 8
+    # sobel_ch: 16
+  image:
+    in_ch: 1
+    out_ch: 32
+    output: 1
+    sobel_ch: 32
